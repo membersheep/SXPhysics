@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EC893B71897FC760097237C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893B61897FC760097237C /* Foundation.framework */; };
+		4EC893B91897FC760097237C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893B81897FC760097237C /* CoreGraphics.framework */; };
+		4EC893BB1897FC760097237C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893BA1897FC760097237C /* UIKit.framework */; };
+		4EC893C11897FC760097237C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EC893BF1897FC760097237C /* InfoPlist.strings */; };
+		4EC893C31897FC760097237C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893C21897FC760097237C /* main.m */; };
+		4EC893C71897FC770097237C /* SXPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893C61897FC770097237C /* SXPAppDelegate.m */; };
+		4EC893C91897FC770097237C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC893C81897FC770097237C /* Images.xcassets */; };
+		4EC893D01897FC770097237C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893CF1897FC770097237C /* XCTest.framework */; };
+		4EC893D11897FC770097237C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893B61897FC760097237C /* Foundation.framework */; };
+		4EC893D21897FC770097237C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893BA1897FC760097237C /* UIKit.framework */; };
+		4EC893DA1897FC770097237C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EC893D81897FC770097237C /* InfoPlist.strings */; };
+		4EC893DC1897FC770097237C /* SXPhysicsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893DB1897FC770097237C /* SXPhysicsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EC893D31897FC770097237C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC893AB1897FC760097237C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EC893B21897FC760097237C;
+			remoteInfo = SXPhysics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4EC893B31897FC760097237C /* SXPhysics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SXPhysics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC893B61897FC760097237C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4EC893B81897FC760097237C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4EC893BA1897FC760097237C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4EC893BE1897FC760097237C /* SXPhysics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SXPhysics-Info.plist"; sourceTree = "<group>"; };
+		4EC893C01897FC760097237C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4EC893C21897FC760097237C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4EC893C41897FC760097237C /* SXPhysics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SXPhysics-Prefix.pch"; sourceTree = "<group>"; };
+		4EC893C51897FC760097237C /* SXPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXPAppDelegate.h; sourceTree = "<group>"; };
+		4EC893C61897FC770097237C /* SXPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXPAppDelegate.m; sourceTree = "<group>"; };
+		4EC893C81897FC770097237C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4EC893CE1897FC770097237C /* SXPhysicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SXPhysicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC893CF1897FC770097237C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4EC893D71897FC770097237C /* SXPhysicsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SXPhysicsTests-Info.plist"; sourceTree = "<group>"; };
+		4EC893D91897FC770097237C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4EC893DB1897FC770097237C /* SXPhysicsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXPhysicsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EC893B01897FC760097237C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC893B91897FC760097237C /* CoreGraphics.framework in Frameworks */,
+				4EC893BB1897FC760097237C /* UIKit.framework in Frameworks */,
+				4EC893B71897FC760097237C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC893CB1897FC770097237C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC893D01897FC770097237C /* XCTest.framework in Frameworks */,
+				4EC893D21897FC770097237C /* UIKit.framework in Frameworks */,
+				4EC893D11897FC770097237C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EC893AA1897FC760097237C = {
+			isa = PBXGroup;
+			children = (
+				4EC893BC1897FC760097237C /* SXPhysics */,
+				4EC893D51897FC770097237C /* SXPhysicsTests */,
+				4EC893B51897FC760097237C /* Frameworks */,
+				4EC893B41897FC760097237C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EC893B41897FC760097237C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EC893B31897FC760097237C /* SXPhysics.app */,
+				4EC893CE1897FC770097237C /* SXPhysicsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EC893B51897FC760097237C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EC893B61897FC760097237C /* Foundation.framework */,
+				4EC893B81897FC760097237C /* CoreGraphics.framework */,
+				4EC893BA1897FC760097237C /* UIKit.framework */,
+				4EC893CF1897FC770097237C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EC893BC1897FC760097237C /* SXPhysics */ = {
+			isa = PBXGroup;
+			children = (
+				4EC893C51897FC760097237C /* SXPAppDelegate.h */,
+				4EC893C61897FC770097237C /* SXPAppDelegate.m */,
+				4EC893C81897FC770097237C /* Images.xcassets */,
+				4EC893BD1897FC760097237C /* Supporting Files */,
+			);
+			path = SXPhysics;
+			sourceTree = "<group>";
+		};
+		4EC893BD1897FC760097237C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EC893BE1897FC760097237C /* SXPhysics-Info.plist */,
+				4EC893BF1897FC760097237C /* InfoPlist.strings */,
+				4EC893C21897FC760097237C /* main.m */,
+				4EC893C41897FC760097237C /* SXPhysics-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EC893D51897FC770097237C /* SXPhysicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EC893DB1897FC770097237C /* SXPhysicsTests.m */,
+				4EC893D61897FC770097237C /* Supporting Files */,
+			);
+			path = SXPhysicsTests;
+			sourceTree = "<group>";
+		};
+		4EC893D61897FC770097237C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EC893D71897FC770097237C /* SXPhysicsTests-Info.plist */,
+				4EC893D81897FC770097237C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EC893B21897FC760097237C /* SXPhysics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC893DF1897FC770097237C /* Build configuration list for PBXNativeTarget "SXPhysics" */;
+			buildPhases = (
+				4EC893AF1897FC760097237C /* Sources */,
+				4EC893B01897FC760097237C /* Frameworks */,
+				4EC893B11897FC760097237C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SXPhysics;
+			productName = SXPhysics;
+			productReference = 4EC893B31897FC760097237C /* SXPhysics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4EC893CD1897FC770097237C /* SXPhysicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC893E21897FC770097237C /* Build configuration list for PBXNativeTarget "SXPhysicsTests" */;
+			buildPhases = (
+				4EC893CA1897FC770097237C /* Sources */,
+				4EC893CB1897FC770097237C /* Frameworks */,
+				4EC893CC1897FC770097237C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EC893D41897FC770097237C /* PBXTargetDependency */,
+			);
+			name = SXPhysicsTests;
+			productName = SXPhysicsTests;
+			productReference = 4EC893CE1897FC770097237C /* SXPhysicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EC893AB1897FC760097237C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SXP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = waresme;
+				TargetAttributes = {
+					4EC893CD1897FC770097237C = {
+						TestTargetID = 4EC893B21897FC760097237C;
+					};
+				};
+			};
+			buildConfigurationList = 4EC893AE1897FC760097237C /* Build configuration list for PBXProject "SXPhysics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4EC893AA1897FC760097237C;
+			productRefGroup = 4EC893B41897FC760097237C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EC893B21897FC760097237C /* SXPhysics */,
+				4EC893CD1897FC770097237C /* SXPhysicsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EC893B11897FC760097237C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC893C11897FC760097237C /* InfoPlist.strings in Resources */,
+				4EC893C91897FC770097237C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC893CC1897FC770097237C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC893DA1897FC770097237C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EC893AF1897FC760097237C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC893C71897FC770097237C /* SXPAppDelegate.m in Sources */,
+				4EC893C31897FC760097237C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC893CA1897FC770097237C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC893DC1897FC770097237C /* SXPhysicsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EC893D41897FC770097237C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EC893B21897FC760097237C /* SXPhysics */;
+			targetProxy = 4EC893D31897FC770097237C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4EC893BF1897FC760097237C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EC893C01897FC760097237C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4EC893D81897FC770097237C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EC893D91897FC770097237C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4EC893DD1897FC770097237C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EC893DE1897FC770097237C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EC893E01897FC770097237C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SXPhysics/SXPhysics-Prefix.pch";
+				INFOPLIST_FILE = "SXPhysics/SXPhysics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4EC893E11897FC770097237C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SXPhysics/SXPhysics-Prefix.pch";
+				INFOPLIST_FILE = "SXPhysics/SXPhysics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4EC893E31897FC770097237C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SXPhysics.app/SXPhysics";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SXPhysics/SXPhysics-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SXPhysicsTests/SXPhysicsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4EC893E41897FC770097237C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SXPhysics.app/SXPhysics";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SXPhysics/SXPhysics-Prefix.pch";
+				INFOPLIST_FILE = "SXPhysicsTests/SXPhysicsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EC893AE1897FC760097237C /* Build configuration list for PBXProject "SXPhysics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC893DD1897FC770097237C /* Debug */,
+				4EC893DE1897FC770097237C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC893DF1897FC770097237C /* Build configuration list for PBXNativeTarget "SXPhysics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC893E01897FC770097237C /* Debug */,
+				4EC893E11897FC770097237C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4EC893E21897FC770097237C /* Build configuration list for PBXNativeTarget "SXPhysicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC893E31897FC770097237C /* Debug */,
+				4EC893E41897FC770097237C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EC893AB1897FC760097237C /* Project object */;
+}
