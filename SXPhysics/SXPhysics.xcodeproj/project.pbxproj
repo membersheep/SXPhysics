@@ -80,11 +80,11 @@
 		4EC893F81897FD7B0097237C /* SPWheelJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPWheelJoint.mm; sourceTree = "<group>"; };
 		4EC893F91897FD7B0097237C /* SPBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBody.h; sourceTree = "<group>"; };
 		4EC893FA1897FD7B0097237C /* SPBody.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPBody.mm; sourceTree = "<group>"; };
-		4EC893FB1897FD7B0097237C /* SPPhysics-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPPhysics-Prefix.pch"; sourceTree = "<group>"; };
 		4EC893FC1897FD7B0097237C /* SPTerrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTerrain.h; sourceTree = "<group>"; };
 		4EC893FD1897FD7B0097237C /* SPTerrain.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPTerrain.mm; sourceTree = "<group>"; };
 		4EC893FE1897FD7B0097237C /* SPWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPWorld.h; sourceTree = "<group>"; };
 		4EC893FF1897FD7B0097237C /* SPWorld.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPWorld.mm; sourceTree = "<group>"; };
+		4EC8940C1897FDFD0097237C /* SXPhysics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXPhysics.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,9 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				4EC893E61897FD7B0097237C /* Joints */,
+				4EC8940C1897FDFD0097237C /* SXPhysics.h */,
 				4EC893F91897FD7B0097237C /* SPBody.h */,
 				4EC893FA1897FD7B0097237C /* SPBody.mm */,
-				4EC893FB1897FD7B0097237C /* SPPhysics-Prefix.pch */,
 				4EC893FC1897FD7B0097237C /* SPTerrain.h */,
 				4EC893FD1897FD7B0097237C /* SPTerrain.mm */,
 				4EC893FE1897FD7B0097237C /* SPWorld.h */,
