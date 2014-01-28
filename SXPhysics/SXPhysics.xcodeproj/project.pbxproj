@@ -19,6 +19,18 @@
 		4EC893D21897FC770097237C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893BA1897FC760097237C /* UIKit.framework */; };
 		4EC893DA1897FC770097237C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EC893D81897FC770097237C /* InfoPlist.strings */; };
 		4EC893DC1897FC770097237C /* SXPhysicsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893DB1897FC770097237C /* SXPhysicsTests.m */; };
+		4EC894001897FD7B0097237C /* SPDistanceJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893E81897FD7B0097237C /* SPDistanceJoint.mm */; };
+		4EC894011897FD7B0097237C /* SPGearJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893EA1897FD7B0097237C /* SPGearJoint.mm */; };
+		4EC894021897FD7B0097237C /* SPJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893EC1897FD7B0097237C /* SPJoint.mm */; };
+		4EC894031897FD7B0097237C /* SPPrismaticJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893EE1897FD7B0097237C /* SPPrismaticJoint.mm */; };
+		4EC894041897FD7B0097237C /* SPPulleyJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893F01897FD7B0097237C /* SPPulleyJoint.mm */; };
+		4EC894051897FD7B0097237C /* SPRevoluteJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893F21897FD7B0097237C /* SPRevoluteJoint.mm */; };
+		4EC894061897FD7B0097237C /* SPTouchJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893F41897FD7B0097237C /* SPTouchJoint.mm */; };
+		4EC894071897FD7B0097237C /* SPWeldJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893F61897FD7B0097237C /* SPWeldJoint.mm */; };
+		4EC894081897FD7B0097237C /* SPWheelJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893F81897FD7B0097237C /* SPWheelJoint.mm */; };
+		4EC894091897FD7B0097237C /* SPBody.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FA1897FD7B0097237C /* SPBody.mm */; };
+		4EC8940A1897FD7B0097237C /* SPTerrain.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FD1897FD7B0097237C /* SPTerrain.mm */; };
+		4EC8940B1897FD7B0097237C /* SPWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FF1897FD7B0097237C /* SPWorld.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +60,31 @@
 		4EC893D71897FC770097237C /* SXPhysicsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SXPhysicsTests-Info.plist"; sourceTree = "<group>"; };
 		4EC893D91897FC770097237C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4EC893DB1897FC770097237C /* SXPhysicsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXPhysicsTests.m; sourceTree = "<group>"; };
+		4EC893E71897FD7B0097237C /* SPDistanceJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDistanceJoint.h; sourceTree = "<group>"; };
+		4EC893E81897FD7B0097237C /* SPDistanceJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPDistanceJoint.mm; sourceTree = "<group>"; };
+		4EC893E91897FD7B0097237C /* SPGearJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGearJoint.h; sourceTree = "<group>"; };
+		4EC893EA1897FD7B0097237C /* SPGearJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPGearJoint.mm; sourceTree = "<group>"; };
+		4EC893EB1897FD7B0097237C /* SPJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPJoint.h; sourceTree = "<group>"; };
+		4EC893EC1897FD7B0097237C /* SPJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPJoint.mm; sourceTree = "<group>"; };
+		4EC893ED1897FD7B0097237C /* SPPrismaticJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPrismaticJoint.h; sourceTree = "<group>"; };
+		4EC893EE1897FD7B0097237C /* SPPrismaticJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPPrismaticJoint.mm; sourceTree = "<group>"; };
+		4EC893EF1897FD7B0097237C /* SPPulleyJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPulleyJoint.h; sourceTree = "<group>"; };
+		4EC893F01897FD7B0097237C /* SPPulleyJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPPulleyJoint.mm; sourceTree = "<group>"; };
+		4EC893F11897FD7B0097237C /* SPRevoluteJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRevoluteJoint.h; sourceTree = "<group>"; };
+		4EC893F21897FD7B0097237C /* SPRevoluteJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPRevoluteJoint.mm; sourceTree = "<group>"; };
+		4EC893F31897FD7B0097237C /* SPTouchJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTouchJoint.h; sourceTree = "<group>"; };
+		4EC893F41897FD7B0097237C /* SPTouchJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPTouchJoint.mm; sourceTree = "<group>"; };
+		4EC893F51897FD7B0097237C /* SPWeldJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPWeldJoint.h; sourceTree = "<group>"; };
+		4EC893F61897FD7B0097237C /* SPWeldJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPWeldJoint.mm; sourceTree = "<group>"; };
+		4EC893F71897FD7B0097237C /* SPWheelJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPWheelJoint.h; sourceTree = "<group>"; };
+		4EC893F81897FD7B0097237C /* SPWheelJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPWheelJoint.mm; sourceTree = "<group>"; };
+		4EC893F91897FD7B0097237C /* SPBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBody.h; sourceTree = "<group>"; };
+		4EC893FA1897FD7B0097237C /* SPBody.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPBody.mm; sourceTree = "<group>"; };
+		4EC893FB1897FD7B0097237C /* SPPhysics-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPPhysics-Prefix.pch"; sourceTree = "<group>"; };
+		4EC893FC1897FD7B0097237C /* SPTerrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTerrain.h; sourceTree = "<group>"; };
+		4EC893FD1897FD7B0097237C /* SPTerrain.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPTerrain.mm; sourceTree = "<group>"; };
+		4EC893FE1897FD7B0097237C /* SPWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPWorld.h; sourceTree = "<group>"; };
+		4EC893FF1897FD7B0097237C /* SPWorld.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPWorld.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +146,7 @@
 			children = (
 				4EC893C51897FC760097237C /* SXPAppDelegate.h */,
 				4EC893C61897FC770097237C /* SXPAppDelegate.m */,
+				4EC893E51897FD7B0097237C /* Classes */,
 				4EC893C81897FC770097237C /* Images.xcassets */,
 				4EC893BD1897FC760097237C /* Supporting Files */,
 			);
@@ -142,6 +180,46 @@
 				4EC893D81897FC770097237C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EC893E51897FD7B0097237C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4EC893E61897FD7B0097237C /* Joints */,
+				4EC893F91897FD7B0097237C /* SPBody.h */,
+				4EC893FA1897FD7B0097237C /* SPBody.mm */,
+				4EC893FB1897FD7B0097237C /* SPPhysics-Prefix.pch */,
+				4EC893FC1897FD7B0097237C /* SPTerrain.h */,
+				4EC893FD1897FD7B0097237C /* SPTerrain.mm */,
+				4EC893FE1897FD7B0097237C /* SPWorld.h */,
+				4EC893FF1897FD7B0097237C /* SPWorld.mm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4EC893E61897FD7B0097237C /* Joints */ = {
+			isa = PBXGroup;
+			children = (
+				4EC893E71897FD7B0097237C /* SPDistanceJoint.h */,
+				4EC893E81897FD7B0097237C /* SPDistanceJoint.mm */,
+				4EC893E91897FD7B0097237C /* SPGearJoint.h */,
+				4EC893EA1897FD7B0097237C /* SPGearJoint.mm */,
+				4EC893EB1897FD7B0097237C /* SPJoint.h */,
+				4EC893EC1897FD7B0097237C /* SPJoint.mm */,
+				4EC893ED1897FD7B0097237C /* SPPrismaticJoint.h */,
+				4EC893EE1897FD7B0097237C /* SPPrismaticJoint.mm */,
+				4EC893EF1897FD7B0097237C /* SPPulleyJoint.h */,
+				4EC893F01897FD7B0097237C /* SPPulleyJoint.mm */,
+				4EC893F11897FD7B0097237C /* SPRevoluteJoint.h */,
+				4EC893F21897FD7B0097237C /* SPRevoluteJoint.mm */,
+				4EC893F31897FD7B0097237C /* SPTouchJoint.h */,
+				4EC893F41897FD7B0097237C /* SPTouchJoint.mm */,
+				4EC893F51897FD7B0097237C /* SPWeldJoint.h */,
+				4EC893F61897FD7B0097237C /* SPWeldJoint.mm */,
+				4EC893F71897FD7B0097237C /* SPWheelJoint.h */,
+				4EC893F81897FD7B0097237C /* SPWheelJoint.mm */,
+			);
+			path = Joints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +318,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EC894061897FD7B0097237C /* SPTouchJoint.mm in Sources */,
+				4EC894011897FD7B0097237C /* SPGearJoint.mm in Sources */,
+				4EC894001897FD7B0097237C /* SPDistanceJoint.mm in Sources */,
 				4EC893C71897FC770097237C /* SXPAppDelegate.m in Sources */,
+				4EC894021897FD7B0097237C /* SPJoint.mm in Sources */,
+				4EC894071897FD7B0097237C /* SPWeldJoint.mm in Sources */,
+				4EC894091897FD7B0097237C /* SPBody.mm in Sources */,
+				4EC894041897FD7B0097237C /* SPPulleyJoint.mm in Sources */,
+				4EC8940A1897FD7B0097237C /* SPTerrain.mm in Sources */,
+				4EC894031897FD7B0097237C /* SPPrismaticJoint.mm in Sources */,
 				4EC893C31897FC760097237C /* main.m in Sources */,
+				4EC8940B1897FD7B0097237C /* SPWorld.mm in Sources */,
+				4EC894081897FD7B0097237C /* SPWheelJoint.mm in Sources */,
+				4EC894051897FD7B0097237C /* SPRevoluteJoint.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
