@@ -7,6 +7,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 #import "Box2D.h"
+#import <Sparrow.h>
 
 @class SXWorld;
 @class SXJoint;
@@ -20,16 +21,16 @@ typedef enum
 
 @interface SXBody : SPDisplayObjectContainer
 {
-    PhysicsType physicsType; 
-	uint16 collisionType, collidesWithType; 
-	BOOL active, sleepy, awake, solid, fixed, bullet;
-	float density, friction, bounce;
-	float damping, angularDamping;
-	float angularVelocity;
-	CGPoint velocity;
-	b2Body *body; 
-	SXWorld *world;
-	
+//    PhysicsType physicsType; 
+//	uint16 collisionType, collidesWithType; 
+//	BOOL active, sleepy, awake, solid, fixed, bullet;
+//	float density, friction, bounce;
+//	float damping, angularDamping;
+//	float angularVelocity;
+//	CGPoint velocity;
+//	b2Body *body; 
+//	SXWorld *world;
+//	
     // The array containing the joints attached to this body
     NSMutableArray *joints;
     // The shapes (fixtures) fixed to the b2Body
@@ -41,27 +42,29 @@ typedef enum
 }
 
 // The physic type of the b2Body
-@property (nonatomic) PhysicsType physicsType;
+@property (nonatomic, assign) PhysicsType physicsType;
 // 16-bit masks to filter collisions of the shapes fixed to the body
-@property (nonatomic) uint16 collisionType;
-@property (nonatomic) uint16 collidesWithType;
-@property (nonatomic) BOOL active;
-@property (nonatomic) BOOL sleepy;
-@property (nonatomic) BOOL awake;
-@property (nonatomic) BOOL solid;
-@property (nonatomic) BOOL fixed;
-@property (nonatomic) BOOL bullet;
-@property (nonatomic) float density;
-@property (nonatomic) float friction;
-@property (nonatomic) float bounce;
-@property (nonatomic) float damping;
-@property (nonatomic) float angularDamping;
-@property (nonatomic) float angularVelocity;
-@property (nonatomic) CGPoint velocity;
+@property (nonatomic, assign) uint16 collisionType;
+@property (nonatomic, assign) uint16 collidesWithType;
+@property (nonatomic, assign) BOOL active;
+@property (nonatomic, assign) BOOL sleepy;
+@property (nonatomic, assign) BOOL awake;
+@property (nonatomic, assign) BOOL solid;
+@property (nonatomic, assign) BOOL fixed;
+@property (nonatomic, assign) BOOL bullet;
+@property (nonatomic, assign) float density;
+@property (nonatomic, assign) float friction;
+@property (nonatomic, assign) float bounce;
+@property (nonatomic, assign) float damping;
+@property (nonatomic, assign) float angularDamping;
+@property (nonatomic, assign) float angularVelocity;
+@property (nonatomic, assign) CGPoint velocity;
 // The b2Body carried for the simulation
 @property (nonatomic, readonly) b2Body *body;
 // The world containing this body
 @property (nonatomic, assign) SXWorld *world;
+
+
 
 +(id) body;
 
@@ -99,8 +102,8 @@ typedef enum
 
 -(void) addChild:(SPDisplayObject *)child withPolygonNamed:(NSString *)shapeName withVertices:(NSMutableArray*)shapeVertices;
 
--(void) addJoint:(SPJoint *)joint;
--(void) removeJoint:(SPJoint *)joint;
+-(void) addJoint:(SXJoint *)joint;
+-(void) removeJoint:(SXJoint *)joint;
 
 -(void) onOverlapBody:(SXBody*)sprite;
 -(void) onSeparateBody:(SXBody*)sprite;

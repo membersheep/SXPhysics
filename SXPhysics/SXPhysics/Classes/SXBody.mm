@@ -1,17 +1,17 @@
 //
-//  SPBody.mm
-//  SPPhysics
+//  SXBody.mm
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 27/09/12.
 //  This class is based on the work by Isaac Drachman (29/07/11).
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SPBody.h"
-#import "SPWorld.h"
-#import "SPJoint.h"
+#import "SXBody.h"
+#import "SXWorld.h"
+#import "SXJoint.h"
 
-@implementation SPBody
+@implementation SXBody
 
 @synthesize physicsType;
 @synthesize collisionType;
@@ -618,7 +618,7 @@
 	}
 	else
 	{
-        // just update the data because the fixture will be created when the body is there, i.e. after being added to the SPWorld.
+        // just update the data because the fixture will be created when the body is there, i.e. after being added to the SXWorld.
 		// get the shape data with the given name
 		b2FixtureDef *oldShapeData = (b2FixtureDef *)[[shapeDataList objectForKey:shapeName] pointerValue];
 		
@@ -873,7 +873,7 @@
 #pragma mark -
 #pragma mark Joints
 
--(void) addJoint:(SPJoint *)joint
+-(void) addJoint:(SXJoint *)joint
 {
     if (joint) 
     {
@@ -881,7 +881,7 @@
     }
 }
 
--(void) removeJoint:(SPJoint *)joint
+-(void) removeJoint:(SXJoint *)joint
 {
     if (joint) 
     {
@@ -949,11 +949,11 @@
 			// create the body
 			body = world.world->CreateBody(&bodyData);
 			
-			// give it a reference to this SPBody object
+			// give it a reference to this SXBody object
 			body->SetUserData(self);
 			
 			// add all the shapes to the body
-			NSArray *shapeNames = [shapeDataList allKeys]; // _shapeData won't be empty when createBody will be called (i.e. when it's added to the SPWorld).
+			NSArray *shapeNames = [shapeDataList allKeys]; // _shapeData won't be empty when createBody will be called (i.e. when it's added to the SXWorld).
 			for (NSString *shapeName in shapeNames)
 			{
 				// get the shape data structure
@@ -993,7 +993,7 @@
 // Default constructor - convenience constructor.
 +(id) body
 {
-    return [[SPBody alloc] init];
+    return [[SXBody alloc] init];
 }
 
 // Init class with default values
@@ -1057,12 +1057,12 @@
 // comment
 - (void) dealloc
 {
-    NSLog(@" dealloc SPBody");
+    NSLog(@" dealloc SXBody");
 	// remove body from world
 	[self destroyBody];
 }
 
-// When the SPBody is added to a sprite we can create che body
+// When the SXBody is added to a sprite we can create che body
 -(void) onEnter :(SPEvent*)event
 {
 	// skip if the body already exists
@@ -1073,10 +1073,10 @@
 	if (!world)
 	{
 		// if parent is a physics manager
-		if ([self.parent isKindOfClass:[SPWorld class]])
+		if ([self.parent isKindOfClass:[SXWorld class]])
 		{
 			// use the parent as the physics manager
-			world = (SPWorld*)self.parent;
+			world = (SXWorld*)self.parent;
 		}
 	}
 	
@@ -1089,11 +1089,11 @@
 }
 
 
-// When the SPBody is removed from a sprite we can destroy the body
+// When the SXBody is removed from a sprite we can destroy the body
 -(void) onExit :(SPEvent*)event
 {
     // destroy all the joints connected to this body
-    for (SPJoint* joint in joints)
+    for (SXJoint* joint in joints)
     {
         [world removeChild:joint];
     }
@@ -1107,19 +1107,19 @@
 #pragma mark Collision
 
 // comment
--(void) onOverlapBody:(SPBody*)sprite
+-(void) onOverlapBody:(SXBody*)sprite
 {
 //    NSLog(@"Body overlapped");
 }
 
 // comment
--(void) onSeparateBody:(SPBody*)sprite
+-(void) onSeparateBody:(SXBody*)sprite
 {
 //    NSLog(@"Body separated");
 }
 
 // comment
--(void) onCollideBody:(SPBody*)sprite withForce:(float)force withFrictionForce:(float)frictionForce
+-(void) onCollideBody:(SXBody*)sprite withForce:(float)force withFrictionForce:(float)frictionForce
 {
 //    NSLog(@"Body overlapped");
 }

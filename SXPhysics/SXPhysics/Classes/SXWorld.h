@@ -41,7 +41,7 @@ public:
 	id<ContactListenizer> listener; // the relay will be connected to an object that manages the contact events (i.e. SXWorld)
 };
 
-@interface SXWorld : SXSprite <ContactListenizer>
+@interface SXWorld : SPSprite <ContactListenizer>
 {
     int positionIterations, velocityIterations;
 	CGPoint gravity;
@@ -65,6 +65,5 @@ public:
 -(void) onOverlapBody:(SXBody *)sprite1 andBody:(SXBody *)sprite2;
 -(void) onSeparateBody:(SXBody *)sprite1 andBody:(SXBody *)sprite2;
 -(void) onCollideBody:(SXBody *)sprite1 andBody:(SXBody *)sprite2 withForce:(float)force withFrictionForce:(float)frictionForce;
-
 
 @end

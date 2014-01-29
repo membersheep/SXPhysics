@@ -1,15 +1,16 @@
 //
-//  SPJoint.h
-//  SPPhysics
+//  SXJoint.h
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 11/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "Box2D.h"
+#import "Sparrow.h"
 
-@class SPWorld;
-@class SPBody;
+@class SXWorld;
+@class SXBody;
 
 typedef enum
 {
@@ -25,13 +26,13 @@ typedef enum
     unknown
 } JointType;
 
-@interface SPJoint : SPImage
+@interface SXJoint : SPImage
 {
     JointType jointType;
     b2Joint* joint;
-    SPWorld* world; 
-    SPBody* bodyA; 
-    SPBody* bodyB; 
+    SXWorld* world; 
+    SXBody* bodyA; 
+    SXBody* bodyB; 
     BOOL collideConnected;
     CGPoint localAnchorA;
 	CGPoint localAnchorB;
@@ -43,11 +44,11 @@ typedef enum
 // The box2d joint
 @property (nonatomic, readonly) b2Joint* joint; 
 // The world on which the joint will be created
-@property (nonatomic, assign) SPWorld* world; // TO DO: maybe retain and release onExit
+@property (nonatomic, assign) SXWorld* world; // TO DO: maybe retain and release onExit
 // First Body
-@property (nonatomic, assign) SPBody* bodyA; // TO DO: maybe retain and release onExit
+@property (nonatomic, assign) SXBody* bodyA; // TO DO: maybe retain and release onExit
 // Second Body
-@property (nonatomic, assign) SPBody* bodyB; // TO DO: maybe retain and release onExit
+@property (nonatomic, assign) SXBody* bodyB; // TO DO: maybe retain and release onExit
 // Set true if the bodies connected must collide with each other
 @property (nonatomic) BOOL collideConnected; 
 // The local anchor point relative to bodyA's origin. Changing it after the joint creation won't affect the joint behaviour.

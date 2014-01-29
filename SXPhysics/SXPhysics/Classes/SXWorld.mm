@@ -1,14 +1,14 @@
 //
-//  SPWorld.mm
-//  SPPhysics
+//  SXWorld.mm
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 27/09/12.
 //  This class is based on the work by Isaac Drachman (29/07/11).
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SPWorld.h"
-#import "SPBody.h"
+#import "SXWorld.h"
+#import "SXBody.h"
 
 #pragma mark ContactRelay Class
 
@@ -21,8 +21,8 @@ ContactRelay::ContactRelay(id<ContactListenizer> listenizer)
 void ContactRelay::BeginContact(b2Contact* contact)
 {
 	// extract the physics sprites from the contact
-	SPBody *sprite1 = (__bridge SPBody *)contact->GetFixtureA()->GetBody()->GetUserData();
-	SPBody *sprite2 = (__bridge SPBody *)contact->GetFixtureB()->GetBody()->GetUserData();
+	SXBody *sprite1 = (__bridge SXBody *)contact->GetFixtureA()->GetBody()->GetUserData();
+	SXBody *sprite2 = (__bridge SXBody *)contact->GetFixtureB()->GetBody()->GetUserData();
 	
 	// notify the physics sprites
 	[sprite1 onOverlapBody:sprite2];
@@ -35,8 +35,8 @@ void ContactRelay::BeginContact(b2Contact* contact)
 void ContactRelay::EndContact(b2Contact* contact)
 {
 	// extract the physics sprites from the contact
-	SPBody *sprite1 = (__bridge SPBody *)contact->GetFixtureA()->GetBody()->GetUserData();
-	SPBody *sprite2 = (__bridge SPBody *)contact->GetFixtureB()->GetBody()->GetUserData();
+	SXBody *sprite1 = (__bridge SXBody *)contact->GetFixtureA()->GetBody()->GetUserData();
+	SXBody *sprite2 = (__bridge SXBody *)contact->GetFixtureB()->GetBody()->GetUserData();
 	
 	// notify the physics sprites
 	[sprite1 onSeparateBody:sprite2];
@@ -49,8 +49,8 @@ void ContactRelay::EndContact(b2Contact* contact)
 void ContactRelay::PostSolve(b2Contact* contact, const b2ContactImpulse* impulse)
 {
 	// extract the physics sprites from the contact
-	SPBody *sprite1 = (__bridge SPBody *)contact->GetFixtureA()->GetBody()->GetUserData();
-	SPBody *sprite2 = (__bridge SPBody *)contact->GetFixtureB()->GetBody()->GetUserData();
+	SXBody *sprite1 = (__bridge SXBody *)contact->GetFixtureA()->GetBody()->GetUserData();
+	SXBody *sprite2 = (__bridge SXBody *)contact->GetFixtureB()->GetBody()->GetUserData();
 	
 	// get the forces involved
 	float force = 0.0f;
@@ -78,7 +78,7 @@ void ContactRelay::PostSolve(b2Contact* contact, const b2ContactImpulse* impulse
 
 #pragma mark -
 
-@implementation SPWorld
+@implementation SXWorld
 @synthesize positionIterations;
 @synthesize velocityIterations;
 @synthesize gravity;
@@ -112,7 +112,7 @@ void ContactRelay::PostSolve(b2Contact* contact, const b2ContactImpulse* impulse
 	{
 		// set up Box2D stuff for collisions
         world = new b2World(b2Vec2()); // flag doSleep has been removed in the current box2D version (v2.2.1)
-		contactRelay = new ContactRelay(self); // setup the contact relay to connect with this SPWorld
+		contactRelay = new ContactRelay(self); // setup the contact relay to connect with this SXWorld
 		world->SetContactListener(contactRelay); // setup the contact listener for the box2d world object
 		[self setGravity:CGPointZero];
 		
@@ -166,15 +166,15 @@ void ContactRelay::PostSolve(b2Contact* contact, const b2ContactImpulse* impulse
 
 #pragma mark Collision Management
 
--(void) onOverlapBody:(SPBody *)sprite1 andBody:(SPBody *)sprite2
+-(void) onOverlapBody:(SXBody *)sprite1 andBody:(SXBody *)sprite2
 {
 }
 
--(void) onSeparateBody:(SPBody *)sprite1 andBody:(SPBody *)sprite2
+-(void) onSeparateBody:(SXBody *)sprite1 andBody:(SXBody *)sprite2
 {
 }
 
--(void) onCollideBody:(SPBody *)sprite1 andBody:(SPBody *)sprite2 withForce:(float)force withFrictionForce:(float)frictionForce;
+-(void) onCollideBody:(SXBody *)sprite1 andBody:(SXBody *)sprite2 withForce:(float)force withFrictionForce:(float)frictionForce;
 {
 }
 
