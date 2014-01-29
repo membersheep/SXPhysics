@@ -19,10 +19,10 @@
 		4EC893D21897FC770097237C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893BA1897FC760097237C /* UIKit.framework */; };
 		4EC893DA1897FC770097237C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EC893D81897FC770097237C /* InfoPlist.strings */; };
 		4EC893DC1897FC770097237C /* SXPhysicsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893DB1897FC770097237C /* SXPhysicsTests.m */; };
-		4EC894021897FD7B0097237C /* SXJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893EC1897FD7B0097237C /* SXJoint.mm */; };
-		4EC894091897FD7B0097237C /* SXBody.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FA1897FD7B0097237C /* SXBody.mm */; };
-		4EC8940A1897FD7B0097237C /* SXTerrain.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FD1897FD7B0097237C /* SXTerrain.mm */; };
-		4EC8940B1897FD7B0097237C /* SXWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FF1897FD7B0097237C /* SXWorld.mm */; };
+		4EC894021897FD7B0097237C /* SXJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893EC1897FD7B0097237C /* SXJoint.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4EC894091897FD7B0097237C /* SXBody.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FA1897FD7B0097237C /* SXBody.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4EC8940A1897FD7B0097237C /* SXTerrain.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FD1897FD7B0097237C /* SXTerrain.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4EC8940B1897FD7B0097237C /* SXWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FF1897FD7B0097237C /* SXWorld.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AEA6E3D0F6B1445A8297450D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8010930D24144354A05FC15D /* libPods.a */; };
 /* End PBXBuildFile section */
 

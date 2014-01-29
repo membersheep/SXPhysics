@@ -1,16 +1,16 @@
 //
-//  SPJoint.m
-//  SPPhysics
+//  SXJoint.m
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 11/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SPJoint.h"
-#import "SPWorld.h"
-#import "SPBody.h"
+#import "SXJoint.h"
+#import "SXWorld.h"
+#import "SXBody.h"
 
-@implementation SPJoint
+@implementation SXJoint
 
 @synthesize jointType; 
 @synthesize joint;
@@ -35,7 +35,7 @@
 {
 	// if joint exists
 	if (joint)
-        //if SPWorld exists
+        //if SXWorld exists
         if(world)
             //if b2World exists
             if(world.world)
@@ -50,7 +50,7 @@
 // Override this method to fill the particular joint definition and call [super createJoint] to execute the join creation part common to all the joint types.
 -(void) createJoint
 {
-    // if SPWorld exists
+    // if SXWorld exists
 	if (world)
 	{
 		// if the b2World exists
@@ -82,7 +82,7 @@
                 
                 // create the joint
                 joint = world.world->CreateJoint(jointData);			
-                // give it a reference to this SPBody object
+                // give it a reference to this SXBody object
                 joint->SetUserData(self);
                 // TO DO: ADD THIS JOINT TO THE JOINTS LIST IN EACH BODY
                 [bodyA addJoint:self];
@@ -112,7 +112,7 @@
 	return self;
 }
 
-// When the SPJoint is added to a sprite we can create the joint
+// When the SXJoint is added to a sprite we can create the joint
 -(void) onEnter :(SPEvent*)event
 {
 	// skip if the joint already exists
@@ -122,10 +122,10 @@
 	if (!world)
 	{
 		// if parent is a physics manager
-		if ([self.parent isKindOfClass:[SPWorld class]])
+		if ([self.parent isKindOfClass:[SXWorld class]])
 		{
 			// use the parent as the physics manager
-			world = (SPWorld*)self.parent;
+			world = (SXWorld*)self.parent;
 		}
 	}
 	// if physics manager is defined now
@@ -136,7 +136,7 @@
 	}
 }
 
-// When the SPJoint is removed from a sprite we can destroy the joint
+// When the SXJoint is removed from a sprite we can destroy the joint
 -(void) onExit :(SPEvent*)event
 {
 	// destroy the joint

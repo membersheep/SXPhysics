@@ -8,6 +8,7 @@
 //
 
 #import "Box2D.h"
+#import "Sparrow.h"
 #include <set>
 
 // pixels to meters ratio

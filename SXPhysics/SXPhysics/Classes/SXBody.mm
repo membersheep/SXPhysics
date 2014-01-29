@@ -950,7 +950,7 @@
 			body = world.world->CreateBody(&bodyData);
 			
 			// give it a reference to this SXBody object
-			body->SetUserData(self);
+			body->SetUserData((__bridge void *)self);
 			
 			// add all the shapes to the body
 			NSArray *shapeNames = [shapeDataList allKeys]; // _shapeData won't be empty when createBody will be called (i.e. when it's added to the SXWorld).

@@ -7,7 +7,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 #import "Box2D.h"
-#import <Sparrow.h>
+#import "Sparrow.h"
 
 @class SXWorld;
 @class SXJoint;
