@@ -1,6 +1,6 @@
 //
-//  SPWorld.h
-//  SPPhysics
+//  SXWorld.h
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 27/09/12.
 //  This class is based on the work by Isaac Drachman (29/07/11).
@@ -17,14 +17,14 @@
 #define GTKG_RATIO 1000
 
 // forward declaration needed
-@class SPBody;
+@class SXBody;
 
 // interface defining the ability to listen for contact events (collision, separation, overlapping)
 @protocol ContactListenizer
 
--(void) onOverlapBody:(SPBody*)sprite1 andBody:(SPBody*)sprite2;
--(void) onSeparateBody:(SPBody*)sprite1 andBody:(SPBody*)sprite2;
--(void) onCollideBody:(SPBody*)sprite1 andBody:(SPBody*)sprite2 withForce:(float)force withFrictionForce:(float)frictionForce;
+-(void) onOverlapBody:(SXBody*)sprite1 andBody:(SXBody*)sprite2;
+-(void) onSeparateBody:(SXBody*)sprite1 andBody:(SXBody*)sprite2;
+-(void) onCollideBody:(SXBody*)sprite1 andBody:(SXBody*)sprite2 withForce:(float)force withFrictionForce:(float)frictionForce;
 
 @end
 
@@ -38,10 +38,10 @@ public:
 	virtual void EndContact(b2Contact* contact);
 	virtual void PostSolve(b2Contact* contact, const b2ContactImpulse* impulse);
 	
-	id<ContactListenizer> listener; // the relay will be connected to an object that manages the contact events (i.e. SPWorld)
+	id<ContactListenizer> listener; // the relay will be connected to an object that manages the contact events (i.e. SXWorld)
 };
 
-@interface SPWorld : SPSprite <ContactListenizer>
+@interface SXWorld : SXSprite <ContactListenizer>
 {
     int positionIterations, velocityIterations;
 	CGPoint gravity;
@@ -62,9 +62,9 @@ public:
 
 -(void) safelyDestroyb2Body:(b2Body*)body;
 
--(void) onOverlapBody:(SPBody *)sprite1 andBody:(SPBody *)sprite2;
--(void) onSeparateBody:(SPBody *)sprite1 andBody:(SPBody *)sprite2;
--(void) onCollideBody:(SPBody *)sprite1 andBody:(SPBody *)sprite2 withForce:(float)force withFrictionForce:(float)frictionForce;
+-(void) onOverlapBody:(SXBody *)sprite1 andBody:(SXBody *)sprite2;
+-(void) onSeparateBody:(SXBody *)sprite1 andBody:(SXBody *)sprite2;
+-(void) onCollideBody:(SXBody *)sprite1 andBody:(SXBody *)sprite2 withForce:(float)force withFrictionForce:(float)frictionForce;
 
 
 @end

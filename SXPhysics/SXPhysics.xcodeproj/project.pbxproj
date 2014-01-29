@@ -28,9 +28,9 @@
 		4EC894061897FD7B0097237C /* SPTouchJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893F41897FD7B0097237C /* SPTouchJoint.mm */; };
 		4EC894071897FD7B0097237C /* SPWeldJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893F61897FD7B0097237C /* SPWeldJoint.mm */; };
 		4EC894081897FD7B0097237C /* SPWheelJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893F81897FD7B0097237C /* SPWheelJoint.mm */; };
-		4EC894091897FD7B0097237C /* SPBody.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FA1897FD7B0097237C /* SPBody.mm */; };
+		4EC894091897FD7B0097237C /* SXBody.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FA1897FD7B0097237C /* SXBody.mm */; };
 		4EC8940A1897FD7B0097237C /* SPTerrain.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FD1897FD7B0097237C /* SPTerrain.mm */; };
-		4EC8940B1897FD7B0097237C /* SPWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FF1897FD7B0097237C /* SPWorld.mm */; };
+		4EC8940B1897FD7B0097237C /* SXWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893FF1897FD7B0097237C /* SXWorld.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,12 +78,12 @@
 		4EC893F61897FD7B0097237C /* SPWeldJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPWeldJoint.mm; sourceTree = "<group>"; };
 		4EC893F71897FD7B0097237C /* SPWheelJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPWheelJoint.h; sourceTree = "<group>"; };
 		4EC893F81897FD7B0097237C /* SPWheelJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPWheelJoint.mm; sourceTree = "<group>"; };
-		4EC893F91897FD7B0097237C /* SPBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBody.h; sourceTree = "<group>"; };
-		4EC893FA1897FD7B0097237C /* SPBody.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPBody.mm; sourceTree = "<group>"; };
+		4EC893F91897FD7B0097237C /* SXBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXBody.h; sourceTree = "<group>"; };
+		4EC893FA1897FD7B0097237C /* SXBody.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SXBody.mm; sourceTree = "<group>"; };
 		4EC893FC1897FD7B0097237C /* SPTerrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTerrain.h; sourceTree = "<group>"; };
 		4EC893FD1897FD7B0097237C /* SPTerrain.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPTerrain.mm; sourceTree = "<group>"; };
-		4EC893FE1897FD7B0097237C /* SPWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPWorld.h; sourceTree = "<group>"; };
-		4EC893FF1897FD7B0097237C /* SPWorld.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPWorld.mm; sourceTree = "<group>"; };
+		4EC893FE1897FD7B0097237C /* SXWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXWorld.h; sourceTree = "<group>"; };
+		4EC893FF1897FD7B0097237C /* SXWorld.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SXWorld.mm; sourceTree = "<group>"; };
 		4EC8940C1897FDFD0097237C /* SXPhysics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXPhysics.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,12 +187,12 @@
 			children = (
 				4EC893E61897FD7B0097237C /* Joints */,
 				4EC8940C1897FDFD0097237C /* SXPhysics.h */,
-				4EC893F91897FD7B0097237C /* SPBody.h */,
-				4EC893FA1897FD7B0097237C /* SPBody.mm */,
+				4EC893F91897FD7B0097237C /* SXBody.h */,
+				4EC893FA1897FD7B0097237C /* SXBody.mm */,
 				4EC893FC1897FD7B0097237C /* SPTerrain.h */,
 				4EC893FD1897FD7B0097237C /* SPTerrain.mm */,
-				4EC893FE1897FD7B0097237C /* SPWorld.h */,
-				4EC893FF1897FD7B0097237C /* SPWorld.mm */,
+				4EC893FE1897FD7B0097237C /* SXWorld.h */,
+				4EC893FF1897FD7B0097237C /* SXWorld.mm */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -200,12 +200,12 @@
 		4EC893E61897FD7B0097237C /* Joints */ = {
 			isa = PBXGroup;
 			children = (
+				4EC893EB1897FD7B0097237C /* SPJoint.h */,
+				4EC893EC1897FD7B0097237C /* SPJoint.mm */,
 				4EC893E71897FD7B0097237C /* SPDistanceJoint.h */,
 				4EC893E81897FD7B0097237C /* SPDistanceJoint.mm */,
 				4EC893E91897FD7B0097237C /* SPGearJoint.h */,
 				4EC893EA1897FD7B0097237C /* SPGearJoint.mm */,
-				4EC893EB1897FD7B0097237C /* SPJoint.h */,
-				4EC893EC1897FD7B0097237C /* SPJoint.mm */,
 				4EC893ED1897FD7B0097237C /* SPPrismaticJoint.h */,
 				4EC893EE1897FD7B0097237C /* SPPrismaticJoint.mm */,
 				4EC893EF1897FD7B0097237C /* SPPulleyJoint.h */,
@@ -324,12 +324,12 @@
 				4EC893C71897FC770097237C /* SXPAppDelegate.m in Sources */,
 				4EC894021897FD7B0097237C /* SPJoint.mm in Sources */,
 				4EC894071897FD7B0097237C /* SPWeldJoint.mm in Sources */,
-				4EC894091897FD7B0097237C /* SPBody.mm in Sources */,
+				4EC894091897FD7B0097237C /* SXBody.mm in Sources */,
 				4EC894041897FD7B0097237C /* SPPulleyJoint.mm in Sources */,
 				4EC8940A1897FD7B0097237C /* SPTerrain.mm in Sources */,
 				4EC894031897FD7B0097237C /* SPPrismaticJoint.mm in Sources */,
 				4EC893C31897FC760097237C /* main.m in Sources */,
-				4EC8940B1897FD7B0097237C /* SPWorld.mm in Sources */,
+				4EC8940B1897FD7B0097237C /* SXWorld.mm in Sources */,
 				4EC894081897FD7B0097237C /* SPWheelJoint.mm in Sources */,
 				4EC894051897FD7B0097237C /* SPRevoluteJoint.mm in Sources */,
 			);
@@ -534,6 +534,7 @@
 				4EC893E11897FC770097237C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EC893E21897FC770097237C /* Build configuration list for PBXNativeTarget "SXPhysicsTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +543,7 @@
 				4EC893E41897FC770097237C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

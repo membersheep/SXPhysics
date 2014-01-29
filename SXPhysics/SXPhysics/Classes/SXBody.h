@@ -1,6 +1,6 @@
 //
-//  SPBody.h
-//  SPPhysics
+//  SXBody.h
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 27/09/12.
 //  This class is based on the work by Isaac Drachman (29/07/11).
@@ -8,8 +8,8 @@
 //
 #import "Box2D.h"
 
-@class SPWorld;
-@class SPJoint;
+@class SXWorld;
+@class SXJoint;
 
 typedef enum
 {
@@ -18,7 +18,7 @@ typedef enum
 	kDynamic
 } PhysicsType;
 
-@interface SPBody : SPDisplayObjectContainer
+@interface SXBody : SPDisplayObjectContainer
 {
     PhysicsType physicsType; 
 	uint16 collisionType, collidesWithType; 
@@ -28,7 +28,7 @@ typedef enum
 	float angularVelocity;
 	CGPoint velocity;
 	b2Body *body; 
-	SPWorld *world;
+	SXWorld *world;
 	
     // The array containing the joints attached to this body
     NSMutableArray *joints;
@@ -61,7 +61,7 @@ typedef enum
 // The b2Body carried for the simulation
 @property (nonatomic, readonly) b2Body *body;
 // The world containing this body
-@property (nonatomic, assign) SPWorld *world;
+@property (nonatomic, assign) SXWorld *world;
 
 +(id) body;
 
@@ -102,8 +102,8 @@ typedef enum
 -(void) addJoint:(SPJoint *)joint;
 -(void) removeJoint:(SPJoint *)joint;
 
--(void) onOverlapBody:(SPBody*)sprite;
--(void) onSeparateBody:(SPBody*)sprite;
--(void) onCollideBody:(SPBody*)sprite withForce:(float)force withFrictionForce:(float)frictionForce;
+-(void) onOverlapBody:(SXBody*)sprite;
+-(void) onSeparateBody:(SXBody*)sprite;
+-(void) onCollideBody:(SXBody*)sprite withForce:(float)force withFrictionForce:(float)frictionForce;
 
 @end
