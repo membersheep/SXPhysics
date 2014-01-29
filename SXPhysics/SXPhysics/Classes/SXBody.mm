@@ -1060,6 +1060,7 @@
     NSLog(@" dealloc SXBody");
 	// remove body from world
 	[self destroyBody];
+    [super dealloc];
 }
 
 // When the SXBody is added to a sprite we can create che body

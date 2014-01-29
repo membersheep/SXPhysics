@@ -21,16 +21,16 @@ typedef enum
 
 @interface SXBody : SPDisplayObjectContainer
 {
-//    PhysicsType physicsType; 
-//	uint16 collisionType, collidesWithType; 
-//	BOOL active, sleepy, awake, solid, fixed, bullet;
-//	float density, friction, bounce;
-//	float damping, angularDamping;
-//	float angularVelocity;
-//	CGPoint velocity;
-//	b2Body *body; 
-//	SXWorld *world;
-//	
+    PhysicsType physicsType; 
+	uint16 collisionType, collidesWithType; 
+	BOOL active, sleepy, awake, solid, fixed, bullet;
+	float density, friction, bounce;
+	float damping, angularDamping;
+	float angularVelocity;
+	CGPoint velocity;
+	b2Body *body; 
+	SXWorld *world;
+	
     // The array containing the joints attached to this body
     NSMutableArray *joints;
     // The shapes (fixtures) fixed to the b2Body
