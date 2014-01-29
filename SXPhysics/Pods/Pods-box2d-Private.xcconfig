@@ -1,0 +1,5 @@
+#include "Pods-box2d.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/box2d" "${PODS_ROOT}/BuildHeaders/box2d/Collision" "${PODS_ROOT}/BuildHeaders/box2d/Collision/Shapes" "${PODS_ROOT}/BuildHeaders/box2d/Common" "${PODS_ROOT}/BuildHeaders/box2d/Dynamics" "${PODS_ROOT}/BuildHeaders/box2d/Dynamics/Contacts" "${PODS_ROOT}/BuildHeaders/box2d/Dynamics/Joints" "${PODS_ROOT}/BuildHeaders/box2d/Rope" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/Sparrow-Framework" "${PODS_ROOT}/Headers/box2d" "${PODS_ROOT}/Headers/box2d/Collision" "${PODS_ROOT}/Headers/box2d/Collision/Shapes" "${PODS_ROOT}/Headers/box2d/Common" "${PODS_ROOT}/Headers/box2d/Dynamics" "${PODS_ROOT}/Headers/box2d/Dynamics/Contacts" "${PODS_ROOT}/Headers/box2d/Dynamics/Joints" "${PODS_ROOT}/Headers/box2d/Rope"
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}

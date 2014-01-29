@@ -1,0 +1,15 @@
+PODS:
+  - box2d (2.3.0)
+  - Sparrow-Framework (2.0.1):
+    - Sparrow-Framework/no-arc
+  - Sparrow-Framework/no-arc (2.0.1)
+
+DEPENDENCIES:
+  - box2d (~> 2.3.0)
+  - Sparrow-Framework (~> 2.0.1)
+
+SPEC CHECKSUMS:
+  box2d: 8214af539447091d8e6f1ac9e06734daacefd4ac
+  Sparrow-Framework: 93fee397aa71f1f23919add903ade24bdf1354ab
+
+COCOAPODS: 0.29.0
