@@ -1,15 +1,14 @@
 //
-//  SPTouchJoint.h
-//  SPPhysics
+//  SXTouchJoint.h
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 22/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Box2D.h"
-#import "SPJoint.h"
+#import "SXPhysics.h"
 
-@interface SPTouchJoint : SPJoint
+@interface SXTouchJoint : SXJoint
 {
     CGPoint target;
 	float maxForce;

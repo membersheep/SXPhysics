@@ -1,17 +1,17 @@
 //
-//  SPTouchJoint.mm
-//  SPPhysics
+//  SXTouchJoint.mm
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 22/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SPTouchJoint.h"
-#import "SPWorld.h"
-#import "SPBody.h"
-#import "SPJoint.h"
+#import "SXTouchJoint.h"
+#import "SXWorld.h"
+#import "SXBody.h"
+#import "SXJoint.h"
 
-@implementation SPTouchJoint
+@implementation SXTouchJoint
 
 @synthesize target;
 @synthesize maxForce;
@@ -110,7 +110,7 @@
 
 +(id) touchJoint
 {
-    return [[SPTouchJoint alloc] init];
+    return [[SXTouchJoint alloc] init];
 }
 
 // Destroys the joint

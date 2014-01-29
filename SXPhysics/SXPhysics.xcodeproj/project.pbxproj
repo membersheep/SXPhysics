@@ -10,6 +10,7 @@
 		4EA7EDE71899438500C7C1C6 /* Game.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7EDE61899438500C7C1C6 /* Game.mm */; };
 		4EA7EDEB189949B300C7C1C6 /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EA7EDE9189949B300C7C1C6 /* ground.png */; };
 		4EA7EDEC189949B300C7C1C6 /* sparrow_round.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EA7EDEA189949B300C7C1C6 /* sparrow_round.png */; };
+		4EA7EDEF18995BD400C7C1C6 /* SXTouchJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7EDEE18995BD400C7C1C6 /* SXTouchJoint.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4EC893B71897FC760097237C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893B61897FC760097237C /* Foundation.framework */; };
 		4EC893B91897FC760097237C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893B81897FC760097237C /* CoreGraphics.framework */; };
 		4EC893BB1897FC760097237C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893BA1897FC760097237C /* UIKit.framework */; };
@@ -44,6 +45,8 @@
 		4EA7EDE61899438500C7C1C6 /* Game.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Game.mm; path = SXPhysics/Game.mm; sourceTree = SOURCE_ROOT; };
 		4EA7EDE9189949B300C7C1C6 /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
 		4EA7EDEA189949B300C7C1C6 /* sparrow_round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sparrow_round.png; sourceTree = "<group>"; };
+		4EA7EDED18995BD400C7C1C6 /* SXTouchJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTouchJoint.h; sourceTree = "<group>"; };
+		4EA7EDEE18995BD400C7C1C6 /* SXTouchJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SXTouchJoint.mm; sourceTree = "<group>"; };
 		4EC893B31897FC760097237C /* SXPhysics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SXPhysics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC893B61897FC760097237C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4EC893B81897FC760097237C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -211,6 +214,8 @@
 			children = (
 				4EC893EB1897FD7B0097237C /* SXJoint.h */,
 				4EC893EC1897FD7B0097237C /* SXJoint.mm */,
+				4EA7EDED18995BD400C7C1C6 /* SXTouchJoint.h */,
+				4EA7EDEE18995BD400C7C1C6 /* SXTouchJoint.mm */,
 			);
 			path = Joints;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EC893C71897FC770097237C /* SXPAppDelegate.mm in Sources */,
+				4EA7EDEF18995BD400C7C1C6 /* SXTouchJoint.mm in Sources */,
 				4EC894021897FD7B0097237C /* SXJoint.mm in Sources */,
 				4EC894091897FD7B0097237C /* SXBody.mm in Sources */,
 				4EC8940A1897FD7B0097237C /* SXTerrain.mm in Sources */,
