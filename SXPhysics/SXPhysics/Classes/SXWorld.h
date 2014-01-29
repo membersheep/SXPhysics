@@ -7,8 +7,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Box2D.h"
-#import "Sparrow.h"
+#import "SXPhysics.h"
 #include <set>
 
 // pixels to meters ratio

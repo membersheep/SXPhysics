@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EA7EDE71899438500C7C1C6 /* Game.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7EDE61899438500C7C1C6 /* Game.mm */; };
+		4EA7EDEB189949B300C7C1C6 /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EA7EDE9189949B300C7C1C6 /* ground.png */; };
+		4EA7EDEC189949B300C7C1C6 /* sparrow_round.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EA7EDEA189949B300C7C1C6 /* sparrow_round.png */; };
 		4EC893B71897FC760097237C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893B61897FC760097237C /* Foundation.framework */; };
 		4EC893B91897FC760097237C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893B81897FC760097237C /* CoreGraphics.framework */; };
 		4EC893BB1897FC760097237C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893BA1897FC760097237C /* UIKit.framework */; };
 		4EC893C11897FC760097237C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EC893BF1897FC760097237C /* InfoPlist.strings */; };
 		4EC893C31897FC760097237C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893C21897FC760097237C /* main.m */; };
-		4EC893C71897FC770097237C /* SXPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893C61897FC770097237C /* SXPAppDelegate.m */; };
+		4EC893C71897FC770097237C /* SXPAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EC893C61897FC770097237C /* SXPAppDelegate.mm */; };
 		4EC893C91897FC770097237C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC893C81897FC770097237C /* Images.xcassets */; };
 		4EC893D01897FC770097237C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893CF1897FC770097237C /* XCTest.framework */; };
 		4EC893D11897FC770097237C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC893B61897FC760097237C /* Foundation.framework */; };
@@ -37,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4EA7EDE51899438500C7C1C6 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = SXPhysics/Game.h; sourceTree = SOURCE_ROOT; };
+		4EA7EDE61899438500C7C1C6 /* Game.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Game.mm; path = SXPhysics/Game.mm; sourceTree = SOURCE_ROOT; };
+		4EA7EDE9189949B300C7C1C6 /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
+		4EA7EDEA189949B300C7C1C6 /* sparrow_round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sparrow_round.png; sourceTree = "<group>"; };
 		4EC893B31897FC760097237C /* SXPhysics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SXPhysics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC893B61897FC760097237C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4EC893B81897FC760097237C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,7 +53,7 @@
 		4EC893C21897FC760097237C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4EC893C41897FC760097237C /* SXPhysics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SXPhysics-Prefix.pch"; sourceTree = "<group>"; };
 		4EC893C51897FC760097237C /* SXPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXPAppDelegate.h; sourceTree = "<group>"; };
-		4EC893C61897FC770097237C /* SXPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXPAppDelegate.m; sourceTree = "<group>"; };
+		4EC893C61897FC770097237C /* SXPAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SXPAppDelegate.mm; sourceTree = "<group>"; };
 		4EC893C81897FC770097237C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4EC893CE1897FC770097237C /* SXPhysicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SXPhysicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC893CF1897FC770097237C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -91,6 +98,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EA7EDDB189941B900C7C1C6 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				4EA7EDE51899438500C7C1C6 /* Game.h */,
+				4EA7EDE61899438500C7C1C6 /* Game.mm */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		4EA7EDE8189949B300C7C1C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4EA7EDE9189949B300C7C1C6 /* ground.png */,
+				4EA7EDEA189949B300C7C1C6 /* sparrow_round.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4EC893AA1897FC760097237C = {
 			isa = PBXGroup;
 			children = (
@@ -127,9 +152,11 @@
 			isa = PBXGroup;
 			children = (
 				4EC893C51897FC760097237C /* SXPAppDelegate.h */,
-				4EC893C61897FC770097237C /* SXPAppDelegate.m */,
+				4EC893C61897FC770097237C /* SXPAppDelegate.mm */,
 				4EC893E51897FD7B0097237C /* Classes */,
+				4EA7EDDB189941B900C7C1C6 /* Test */,
 				4EC893C81897FC770097237C /* Images.xcassets */,
+				4EA7EDE8189949B300C7C1C6 /* Resources */,
 				4EC893BD1897FC760097237C /* Supporting Files */,
 			);
 			path = SXPhysics;
@@ -266,6 +293,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA7EDEB189949B300C7C1C6 /* ground.png in Resources */,
+				4EA7EDEC189949B300C7C1C6 /* sparrow_round.png in Resources */,
 				4EC893C11897FC760097237C /* InfoPlist.strings in Resources */,
 				4EC893C91897FC770097237C /* Images.xcassets in Resources */,
 			);
@@ -319,11 +348,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EC893C71897FC770097237C /* SXPAppDelegate.m in Sources */,
+				4EC893C71897FC770097237C /* SXPAppDelegate.mm in Sources */,
 				4EC894021897FD7B0097237C /* SXJoint.mm in Sources */,
 				4EC894091897FD7B0097237C /* SXBody.mm in Sources */,
 				4EC8940A1897FD7B0097237C /* SXTerrain.mm in Sources */,
 				4EC893C31897FC760097237C /* main.m in Sources */,
+				4EA7EDE71899438500C7C1C6 /* Game.mm in Sources */,
 				4EC8940B1897FD7B0097237C /* SXWorld.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

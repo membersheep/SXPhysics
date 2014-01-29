@@ -7,4 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-// TODO: Add all the headers.
+#import "Box2D.h"
+#import "Sparrow.h"
+#import "SXWorld.h"
+#import "SXBody.h"
+#import "SXJoint.h"

@@ -7,15 +7,25 @@
 //
 
 #import "SXPAppDelegate.h"
+#import "Game.h"
 
 @implementation SXPAppDelegate
+{
+    SPViewController *_viewController;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    _viewController = [[SPViewController alloc] init];
+    // Enable some common settings here:
+    _viewController.showStats = YES;
+    _viewController.multitouchEnabled = YES;
+    _viewController.preferredFramesPerSecond = 60;
+    [_viewController startWithRoot:[Game class] supportHighResolutions:YES doubleOnPad:NO];
     [self.window makeKeyAndVisible];
+    [_window setRootViewController:_viewController];
     return YES;
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Sparrow.h"
 
 @interface SXPAppDelegate : UIResponder <UIApplicationDelegate>
 

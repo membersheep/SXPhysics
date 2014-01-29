@@ -6,8 +6,7 @@
 //  This class is based on the work by Isaac Drachman (29/07/11).
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-#import "Box2D.h"
-#import "Sparrow.h"
+#import "SXPhysics.h"
 
 @class SXWorld;
 @class SXJoint;
