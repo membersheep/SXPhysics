@@ -1,17 +1,17 @@
 //
-//  SPWheelJoint.mm
-//  SPPhysics
+//  SXWheelJoint.mm
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 24/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SPWheelJoint.h"
-#import "SPWorld.h"
-#import "SPBody.h"
-#import "SPJoint.h"
+#import "SXWheelJoint.h"
+#import "SXWorld.h"
+#import "SXBody.h"
+#import "SXJoint.h"
 
-@implementation SPWheelJoint
+@implementation SXWheelJoint
 
 @synthesize localAxisA;
 @synthesize enableMotor;    
@@ -131,7 +131,7 @@
 // Default constructor.
 +(id) wheelJoint
 {
-    return [[SPWheelJoint alloc] init];
+    return [[SXWheelJoint alloc] init];
 }
 
 // Destroys the joint
@@ -187,6 +187,6 @@
     delete jointData;
     jointData = NULL;
     // Always call super dealloc
-    [super dealloc];
+//    [super dealloc];
 }
 @end

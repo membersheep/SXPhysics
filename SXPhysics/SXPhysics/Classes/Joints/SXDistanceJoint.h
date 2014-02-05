@@ -1,15 +1,15 @@
 //
-//  SPDistanceJoint.h
-//  SPPhysics
+//  SXDistanceJoint.h
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 19/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "Box2D.h"
-#import "SPJoint.h"
+#import "SXJoint.h"
 
-@interface SPDistanceJoint : SPJoint
+@interface SXDistanceJoint : SXJoint
 {
 	float length;
     float frequency;

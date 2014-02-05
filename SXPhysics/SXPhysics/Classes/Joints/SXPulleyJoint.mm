@@ -1,17 +1,17 @@
 //
-//  SPPulleyJoint.mm
-//  SPPhysics
+//  SXPulleyJoint.mm
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 23/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SPPulleyJoint.h"
-#import "SPWorld.h"
-#import "SPBody.h"
-#import "SPJoint.h"
+#import "SXPulleyJoint.h"
+#import "SXWorld.h"
+#import "SXBody.h"
+#import "SXJoint.h"
 
-@implementation SPPulleyJoint
+@implementation SXPulleyJoint
 
 @synthesize groundAnchorA;
 @synthesize groundAnchorB;
@@ -54,7 +54,7 @@
 
 +(id) pulleyJoint
 {
-    return [[SPPulleyJoint alloc] init];
+    return [[SXPulleyJoint alloc] init];
 }
 
 // Destroys the joint
@@ -120,7 +120,7 @@
     delete jointData;
     jointData = NULL;
     // Always call super dealloc
-    [super dealloc];
+//    [super dealloc];
 }
 
 @end

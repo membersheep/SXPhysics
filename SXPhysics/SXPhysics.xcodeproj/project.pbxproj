@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E5E380618A247E10009E56A /* SXDistanceJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E37F918A247E10009E56A /* SXDistanceJoint.mm */; };
+		4E5E380718A247E10009E56A /* SXGearJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E37FB18A247E10009E56A /* SXGearJoint.mm */; };
+		4E5E380818A247E10009E56A /* SXPrismaticJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E37FD18A247E10009E56A /* SXPrismaticJoint.mm */; };
+		4E5E380918A247E10009E56A /* SXPulleyJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E37FF18A247E10009E56A /* SXPulleyJoint.mm */; };
+		4E5E380A18A247E10009E56A /* SXRevoluteJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E380118A247E10009E56A /* SXRevoluteJoint.mm */; };
+		4E5E380B18A247E10009E56A /* SXWeldJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E380318A247E10009E56A /* SXWeldJoint.mm */; };
+		4E5E380C18A247E10009E56A /* SXWheelJoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E380518A247E10009E56A /* SXWheelJoint.mm */; };
 		4EA7EDE71899438500C7C1C6 /* Game.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7EDE61899438500C7C1C6 /* Game.mm */; };
 		4EA7EDEB189949B300C7C1C6 /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EA7EDE9189949B300C7C1C6 /* ground.png */; };
 		4EA7EDEC189949B300C7C1C6 /* sparrow_round.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EA7EDEA189949B300C7C1C6 /* sparrow_round.png */; };
@@ -41,6 +48,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E5E37F818A247E10009E56A /* SXDistanceJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXDistanceJoint.h; sourceTree = "<group>"; };
+		4E5E37F918A247E10009E56A /* SXDistanceJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SXDistanceJoint.mm; sourceTree = "<group>"; };
+		4E5E37FA18A247E10009E56A /* SXGearJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXGearJoint.h; sourceTree = "<group>"; };
+		4E5E37FB18A247E10009E56A /* SXGearJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SXGearJoint.mm; sourceTree = "<group>"; };
+		4E5E37FC18A247E10009E56A /* SXPrismaticJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXPrismaticJoint.h; sourceTree = "<group>"; };
+		4E5E37FD18A247E10009E56A /* SXPrismaticJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SXPrismaticJoint.mm; sourceTree = "<group>"; };
+		4E5E37FE18A247E10009E56A /* SXPulleyJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXPulleyJoint.h; sourceTree = "<group>"; };
+		4E5E37FF18A247E10009E56A /* SXPulleyJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SXPulleyJoint.mm; sourceTree = "<group>"; };
+		4E5E380018A247E10009E56A /* SXRevoluteJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXRevoluteJoint.h; sourceTree = "<group>"; };
+		4E5E380118A247E10009E56A /* SXRevoluteJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SXRevoluteJoint.mm; sourceTree = "<group>"; };
+		4E5E380218A247E10009E56A /* SXWeldJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXWeldJoint.h; sourceTree = "<group>"; };
+		4E5E380318A247E10009E56A /* SXWeldJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SXWeldJoint.mm; sourceTree = "<group>"; };
+		4E5E380418A247E10009E56A /* SXWheelJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXWheelJoint.h; sourceTree = "<group>"; };
+		4E5E380518A247E10009E56A /* SXWheelJoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SXWheelJoint.mm; sourceTree = "<group>"; };
 		4EA7EDE51899438500C7C1C6 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = SXPhysics/Game.h; sourceTree = SOURCE_ROOT; };
 		4EA7EDE61899438500C7C1C6 /* Game.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Game.mm; path = SXPhysics/Game.mm; sourceTree = SOURCE_ROOT; };
 		4EA7EDE9189949B300C7C1C6 /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
@@ -216,6 +237,20 @@
 				4EC893EC1897FD7B0097237C /* SXJoint.mm */,
 				4EA7EDED18995BD400C7C1C6 /* SXTouchJoint.h */,
 				4EA7EDEE18995BD400C7C1C6 /* SXTouchJoint.mm */,
+				4E5E37F818A247E10009E56A /* SXDistanceJoint.h */,
+				4E5E37F918A247E10009E56A /* SXDistanceJoint.mm */,
+				4E5E37FA18A247E10009E56A /* SXGearJoint.h */,
+				4E5E37FB18A247E10009E56A /* SXGearJoint.mm */,
+				4E5E37FC18A247E10009E56A /* SXPrismaticJoint.h */,
+				4E5E37FD18A247E10009E56A /* SXPrismaticJoint.mm */,
+				4E5E37FE18A247E10009E56A /* SXPulleyJoint.h */,
+				4E5E37FF18A247E10009E56A /* SXPulleyJoint.mm */,
+				4E5E380018A247E10009E56A /* SXRevoluteJoint.h */,
+				4E5E380118A247E10009E56A /* SXRevoluteJoint.mm */,
+				4E5E380218A247E10009E56A /* SXWeldJoint.h */,
+				4E5E380318A247E10009E56A /* SXWeldJoint.mm */,
+				4E5E380418A247E10009E56A /* SXWheelJoint.h */,
+				4E5E380518A247E10009E56A /* SXWheelJoint.mm */,
 			);
 			path = Joints;
 			sourceTree = "<group>";
@@ -358,8 +393,15 @@
 				4EC894021897FD7B0097237C /* SXJoint.mm in Sources */,
 				4EC894091897FD7B0097237C /* SXBody.mm in Sources */,
 				4EC8940A1897FD7B0097237C /* SXTerrain.mm in Sources */,
+				4E5E380818A247E10009E56A /* SXPrismaticJoint.mm in Sources */,
+				4E5E380918A247E10009E56A /* SXPulleyJoint.mm in Sources */,
+				4E5E380B18A247E10009E56A /* SXWeldJoint.mm in Sources */,
+				4E5E380A18A247E10009E56A /* SXRevoluteJoint.mm in Sources */,
 				4EC893C31897FC760097237C /* main.m in Sources */,
+				4E5E380618A247E10009E56A /* SXDistanceJoint.mm in Sources */,
 				4EA7EDE71899438500C7C1C6 /* Game.mm in Sources */,
+				4E5E380718A247E10009E56A /* SXGearJoint.mm in Sources */,
+				4E5E380C18A247E10009E56A /* SXWheelJoint.mm in Sources */,
 				4EC8940B1897FD7B0097237C /* SXWorld.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

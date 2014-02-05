@@ -1,17 +1,17 @@
 //
-//  SPDistanceJoint.m
-//  SPPhysics
+//  SXDistanceJoint.m
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 19/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SPDistanceJoint.h"
-#import "SPWorld.h"
-#import "SPBody.h"
-#import "SPJoint.h"
+#import "SXDistanceJoint.h"
+#import "SXWorld.h"
+#import "SXBody.h"
+#import "SXJoint.h"
 
-@implementation SPDistanceJoint
+@implementation SXDistanceJoint
 
 @synthesize length;
 @synthesize frequency;
@@ -64,7 +64,7 @@
 
 +(id) distanceJoint
 {
-    return [[SPDistanceJoint alloc] init];
+    return [[SXDistanceJoint alloc] init];
 }
 
 // Destroys the joint
@@ -122,7 +122,7 @@
     delete jointData;
     jointData = NULL;
     // Always call super dealloc
-    [super dealloc];
+//    [super dealloc];
 }
 
 

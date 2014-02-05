@@ -1,17 +1,17 @@
 //
-//  SPGearJoint.mm
-//  SPPhysics
+//  SXGearJoint.mm
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 24/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SPGearJoint.h"
-#import "SPWorld.h"
-#import "SPBody.h"
-#import "SPJoint.h"
+#import "SXGearJoint.h"
+#import "SXWorld.h"
+#import "SXBody.h"
+#import "SXJoint.h"
 
-@implementation SPGearJoint
+@implementation SXGearJoint
 
 @synthesize joint1;
 @synthesize joint2;
@@ -43,7 +43,7 @@
 // Default constructor.
 +(id) gearJoint
 {
-    return [[SPGearJoint alloc] init];
+    return [[SXGearJoint alloc] init];
 }
 
 // Destroys the joint
@@ -90,7 +90,7 @@
     delete jointData;
     jointData = NULL;
     // Always call super dealloc
-    [super dealloc];
+//    [super dealloc];
 }
 
 @end

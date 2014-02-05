@@ -1,16 +1,16 @@
 //
-//  SPPulleyJoint.h
-//  SPPhysics
+//  SXPulleyJoint.h
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 23/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "Box2D.h"
-#import "SPJoint.h"
+#import "SXJoint.h"
 
 // Defines a basic pulley. They often work better when combined with prismatic joints. You should also cover the the anchor points with static shapes to prevent one side from going to zero length.
-@interface SPPulleyJoint : SPJoint
+@interface SXPulleyJoint : SXJoint
 {
     CGPoint groundAnchorA;    
     CGPoint groundAnchorB;

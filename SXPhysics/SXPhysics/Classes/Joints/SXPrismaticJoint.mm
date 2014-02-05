@@ -1,16 +1,16 @@
 //
-//  SPPrismaticJoint.m
-//  SPPhysics
+//  SXPrismaticJoint.m
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 18/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SPPrismaticJoint.h"
-#import "SPWorld.h"
-#import "SPJoint.h"
+#import "SXPrismaticJoint.h"
+#import "SXWorld.h"
+#import "SXJoint.h"
 
-@implementation SPPrismaticJoint
+@implementation SXPrismaticJoint
 
 @synthesize localAxisA;
 @synthesize referenceAngle;
@@ -119,7 +119,7 @@
 
 +(id) prismaticJoint
 {
-    return [[SPPrismaticJoint alloc] init];
+    return [[SXPrismaticJoint alloc] init];
 }
 
 // Destroys the joint
@@ -181,7 +181,7 @@
     delete jointData;
     jointData = NULL;
     // Always call super dealloc
-    [super dealloc];
+//    [super dealloc];
 }
 
 @end

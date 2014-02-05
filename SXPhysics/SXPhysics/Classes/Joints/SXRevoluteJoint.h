@@ -1,15 +1,15 @@
 //
-//  SPRevoluteJoint.h
-//  SPPhysics
+//  SXRevoluteJoint.h
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 12/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "Box2D.h"
-#import "SPJoint.h"
+#import "SXJoint.h"
 
-@interface SPRevoluteJoint : SPJoint
+@interface SXRevoluteJoint : SXJoint
 {
 	float referenceAngle;
 	BOOL enableLimit;

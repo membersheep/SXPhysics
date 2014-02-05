@@ -1,15 +1,15 @@
 //
-//  SPWheelJoint.h
-//  SPPhysics
+//  SXWheelJoint.h
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 24/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "Box2D.h"
-#import "SPJoint.h"
+#import "SXJoint.h"
 
-@interface SPWheelJoint : SPJoint
+@interface SXWheelJoint : SXJoint
 {
     CGPoint localAxisA;
 	BOOL enableMotor;    

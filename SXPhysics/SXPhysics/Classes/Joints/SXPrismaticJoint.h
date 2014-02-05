@@ -1,15 +1,15 @@
 //
-//  SPPrismaticJoint.h
-//  SPPhysics
+//  SXPrismaticJoint.h
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 18/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "Box2D.h"
-#import "SPJoint.h"
+#import "SXJoint.h"
 
-@interface SPPrismaticJoint : SPJoint
+@interface SXPrismaticJoint : SXJoint
 {
     CGPoint localAxisA;
 	float referenceAngle;

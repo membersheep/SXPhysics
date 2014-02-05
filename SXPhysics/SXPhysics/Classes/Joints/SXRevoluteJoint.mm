@@ -1,16 +1,16 @@
 //
-//  SPRevoluteJoint.mm
-//  SPPhysics
+//  SXRevoluteJoint.mm
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 12/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SPRevoluteJoint.h"
-#import "SPWorld.h"
-#import "SPJoint.h"
+#import "SXRevoluteJoint.h"
+#import "SXWorld.h"
+#import "SXJoint.h"
 
-@implementation SPRevoluteJoint
+@implementation SXRevoluteJoint
 
 @synthesize referenceAngle;
 @synthesize enableLimit;
@@ -120,7 +120,7 @@
 +(id) revoluteJoint
 {
 //    NSLog(@"ALLOC REVOLUTE JOINT");
-    return [[SPRevoluteJoint alloc] init];
+    return [[SXRevoluteJoint alloc] init];
 }
 
 // Destroys the joint
@@ -183,7 +183,7 @@
     delete jointData;
     jointData = NULL;
     // Always call super dealloc
-    [super dealloc];
+//    [super dealloc];
 }
 
 @end

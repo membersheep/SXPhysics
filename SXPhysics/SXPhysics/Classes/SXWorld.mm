@@ -159,6 +159,7 @@ void ContactRelay::PostSolve(b2Contact* contact, const b2ContactImpulse* impulse
 
 - (void) dealloc
 {
+    NSLog(@"SXWorld dealloc called");
 	// delete Box2D stuff
 	delete contactRelay;
 	delete world;

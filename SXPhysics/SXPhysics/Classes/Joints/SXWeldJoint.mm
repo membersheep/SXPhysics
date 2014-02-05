@@ -1,17 +1,17 @@
 //
-//  SPWeldJoint.mm
-//  SPPhysics
+//  SXWeldJoint.mm
+//  SXPhysics
 //
 //  Created by Alessandro Maroso on 24/10/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SPWeldJoint.h"
-#import "SPWorld.h"
-#import "SPBody.h"
-#import "SPJoint.h"
+#import "SXWeldJoint.h"
+#import "SXWorld.h"
+#import "SXBody.h"
+#import "SXJoint.h"
 
-@implementation SPWeldJoint
+@implementation SXWeldJoint
 
 @synthesize referenceAngle;
 @synthesize frequency;
@@ -71,7 +71,7 @@
 // Default constructor.
 +(id) weldJoint
 {
-    return [[SPWeldJoint alloc] init];
+    return [[SXWeldJoint alloc] init];
 }
 
 // Destroys the joint
@@ -122,6 +122,6 @@
     delete jointData;
     jointData = NULL;
     // Always call super dealloc
-    [super dealloc];
+//    [super dealloc];
 }
 @end
