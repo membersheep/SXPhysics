@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Sparrow-Framework.xcscheme</key>
+		<key>Pods-Sparrow.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>31F4C73585384D5CAFB37440</key>
+		<key>3EBED8B422305266DE6BF1AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4FBE4B6FF8D64B9CA3730195</key>
+		<key>5D55B56DD77CFDCAA6F613F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FAC179C4799741FD94B11A4D</key>
+		<key>64E5FC811ACBE83C63BE2132</key>
 		<dict>
 			<key>primary</key>
 			<true/>

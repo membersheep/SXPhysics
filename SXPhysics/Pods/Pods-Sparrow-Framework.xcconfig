@@ -1,1 +1,0 @@
-PODS_SPARROW_FRAMEWORK_OTHER_LDFLAGS = -lz -framework AVFoundation -framework AudioToolbox -framework GLKit -framework OpenAL -framework OpenGLES -framework QuartzCore
