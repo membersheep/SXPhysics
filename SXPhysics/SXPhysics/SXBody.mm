@@ -1045,7 +1045,7 @@
                         {
                             CGPoint offset = CGPointFromString_(pointString);
                             vertices[vindex].x = (offset.x / customPTMRatio) ;
-                            vertices[vindex].y = (offset.y / customPTMRatio) ;
+                            vertices[vindex].y = -(offset.y / customPTMRatio) ;
                             vindex++;
                         }
                         polyshape->Set(vertices, vindex);

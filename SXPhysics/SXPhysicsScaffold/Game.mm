@@ -72,6 +72,19 @@
     [self.test addChild:testImage];
     [self.world addChild:self.test];
     
+    SXBody *test0 = [SXBody createBodyForBodyName:@"drink" fromFile:@"shapedefs.plist"];
+    test0.x = [Sparrow currentController].stage.width*3/4;
+    SPImage *test0Image = [SPImage imageWithContentsOfFile:@"drink.png"];
+    [test0Image alignPivotX:SPHAlignCenter pivotY:SPVAlignCenter];
+    [test0 addChild:test0Image];
+    [self.world addChild:test0];
+    
+    SXBody *test1 = [SXBody createBodyForBodyName:@"hotdog" fromFile:@"shapedefs.plist"];
+    test1.x = [Sparrow currentController].stage.width*1/4;
+    SPImage *test1Image = [SPImage imageWithContentsOfFile:@"hotdog.png"];
+    [test1Image alignPivotX:SPHAlignCenter pivotY:SPVAlignCenter];
+    [test1 addChild:test1Image];
+    [self.world addChild:test1];
 }
 
 -(void)onTouch:(SPTouchEvent*)event
