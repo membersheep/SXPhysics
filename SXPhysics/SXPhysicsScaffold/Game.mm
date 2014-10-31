@@ -40,7 +40,7 @@
     self.world = [[SXWorld alloc] init];
     
     // Set the gravity in m/s^2
-    self.world.gravity = CGPointMake(0, 9.8 * PTM_RATIO);
+    self.world.gravity = CGPointMake(0, 2 * PTM_RATIO);
     [self addChild:self.world];
     
     // Create the ground.
@@ -64,8 +64,12 @@
     [self.world addChild:self.sparrow];
     
     self.hotDog = [SXBody createBodyForBodyName:@"hotdog" fromFile:@"shapedefs.plist"];
+    self.hotDog.x = [Sparrow currentController].stage.width/2;
+    SPImage *hotDogImage = [SPImage imageWithContentsOfFile:@"hotdog.png"];
+    [hotDogImage alignPivotX:SPHAlignCenter pivotY:SPVAlignCenter];
+    [self.hotDog addChild:hotDogImage];
     [self.world addChild:self.hotDog];
-    [self.hotDog addChild:[SPImage imageWithContentsOfFile:@"hotdog.png"]];
+    
 }
 
 -(void)onTouch:(SPTouchEvent*)event
