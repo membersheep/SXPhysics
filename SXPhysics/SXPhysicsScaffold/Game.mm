@@ -14,7 +14,7 @@
 @property (nonatomic, strong) SXWorld* world;
 @property (nonatomic, strong) SXBody* ground;
 @property (nonatomic, strong) SXBody* sparrow;
-@property (nonatomic, strong) SXBody* hotDog;
+@property (nonatomic, strong) SXBody* test;
 @property (nonatomic, strong) SXTouchJoint* touchJoint;
 
 @end
@@ -42,7 +42,7 @@
     self.world = [[SXWorld alloc] init];
     
     // Set the gravity in m/s^2
-    self.world.gravity = CGPointMake(0, 2 * PTM_RATIO);
+    self.world.gravity = CGPointMake(0, 1 * PTM_RATIO);
     [self addChild:self.world];
     
     // Create the ground.
@@ -65,24 +65,14 @@
     self.sparrow.y = [Sparrow currentController].stage.height/2;
     [self.world addChild:self.sparrow];
     
-    self.hotDog = [SXBody createBodyForBodyName:@"hotdog" fromFile:@"shapedefs.plist"];
-    self.hotDog.x = [Sparrow currentController].stage.width/2;
-    SPImage *hotDogImage = [SPImage imageWithContentsOfFile:@"hotdog.png"];
-    [hotDogImage alignPivotX:SPHAlignCenter pivotY:SPVAlignCenter];
-    [self.hotDog addChild:hotDogImage];
-    [self.world addChild:self.hotDog];
+    self.test = [SXBody createBodyForBodyName:@"triangle" fromFile:@"triangle.plist"];
+    self.test.x = [Sparrow currentController].stage.width/2;
+    SPImage *testImage = [SPImage imageWithContentsOfFile:@"triangle.png"];
+    [testImage alignPivotX:SPHAlignCenter pivotY:SPVAlignCenter];
+    [self.test addChild:testImage];
+    [self.world addChild:self.test];
     
 }
-
-//-(void)onTouch:(SPTouchEvent*)event
-//{
-//    SPTouch *touch = [event.touches anyObject];
-//    if (touch.phase == SPTouchPhaseEnded)
-//    {
-//        SPPoint *touchLocation = [touch locationInSpace:self.sparrow];
-//        [self.sparrow setVelocity:CGPointMake(touchLocation.x, touchLocation.y)];
-//    }
-//}
 
 -(void)onTouch:(SPTouchEvent*)event
 {
